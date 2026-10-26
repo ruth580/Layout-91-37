@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "ab";
+    src: url(Merchant\ Copy.ttf);
+}
+
+
+body {
+    background-color: #f5a27d;
+    font-family:"ab";
+    margin: 15px;
+    font-size: 30px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 25px 0 10px 10px;
+}
+
+ol {
+    background-color: #b8e2ff;
+    border: 3px solid #6cb8ff;
+    padding: 15px 30px;
+    margin: 10px;
+    list-style-position: inside;
+}
+
+ol li {
+    background-color: #c4ffb0;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid #3fbf38;
+    text-align: justify;
+}
+
+ol li.stroberi {
+    background-color: #ff82a9;
+    border: 2px solid #ff4d94;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    background-color: #d7b0ff;
+    border: 3px solid #a66eff;
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 15px 30px;
+    margin: 10px;
+}
+
+ul, ol {
+    margin-left: 30px;
+}
+
+ul li {
+    background-color: #f9f4b1;
+    margin: 8px 0;
+    padding: 8px 12px;
+    border: 2px solid #ffee58;
+    text-align: justify;
+}
+
+ul:last-of-type {
+    background-color: #d7ffb8;
+    border: 3px solid #8ed657;
+}
+
+ul:last-of-type li {
+    background-color: #fff56f;
+    border: 2px solid #f3c623;
+}

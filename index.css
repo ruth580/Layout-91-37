@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* membuat style pada header */
+.header{
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+/* membuat style pada navigator/topnav */
+.topnav{
+    overflow: hidden;
+    background-color: bisque;
+}
+/* membuat style link pada navigator/topnav */
+.topnav a{
+    float: left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: cornsilk;
+    color: brown;
+}
+.column{
+    float: left;
+    padding: 10px;
+    background-color: floralwhite;
+}
+/* membuat style pada column kanan-kiri */
+.column.side{
+    width: 25%;
+}
+/* membuat style pada column tengah */
+.column.middle{
+    width:50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: lemonchiffon;
+    padding: 10px;
+    text-align: center;
+}
+/* style biodata */
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+  
+}
+
+h2{
+    color:blue ;
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    color:pink ;
+    background-color:brown;
+    text-align: center;
+}
+
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: rgb(168, 243, 243);
+    color: darkblue ;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 60px;
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(109, 244, 165);
+}
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.makanan{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.nasgor{
+    width:250px;
+    height:280px;
+    border-radius: 25px;    
+    box-shadow: 0 4px 8px 0 rgba(96, 56, 56, 0.985);
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+div.nasgor:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.ayam{
+    width:250px;
+    height:280px;
+    border-radius: 25px;    
+    box-shadow: 0 4px 8px 0 rgba(96, 56, 56, 0.985);
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+div.ayam:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.mie{
+    width:250px;
+    height:280px;
+    border-radius: 25px;    
+    box-shadow: 0 4px 8px 0 rgba(96, 56, 56, 0.985);
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+div.mie:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.nasi{
+    width:250px;
+    height:280px;
+    border-radius: 25px;    
+    box-shadow: 0 4px 8px 0 rgba(96, 56, 56, 0.985);
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+div.nasi:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+/* style pada Table */
+table, th, td{
+    border: 1px solid black;
+}
+table{
+    width: 60%;
+    border-collapse: collapse;
+}
+th{
+    height: 40px;
+    padding: 2px;
+    background-color: beige;
+}
+tr{
+    background-color: rgb(159, 241, 159);
+}
+tr:nth-child(even){
+    background-color: blanchedalmond;
+}
+tr:hover{
+    background-color: pink;
+}
+/* list style */
+ol{
+    border: 1px solid black;
+   background-color: bisque;
+     margin: 10px;
+    list-style-position: inside;
+    padding: 15px 30px;
+}
+ol li{border: 1px solid black;
+    padding: 5px;
+    background-color: pink;
+    text-align: justify;
+    margin: 3px 0;
+}
+ul{
+    border: 1px solid black;
+   background-color: rgb(247, 173, 248);
+   margin: 10px;
+    list-style-position: inside;
+    padding: 15px 30px;
+}
+ul li{border: 1px solid black;
+    padding: 5px;
+    background-color:ivory;
+    text-align: justify;
+    margin: 3px 0;
+}
+li.a{background-color: bisque;}
+ul.b{
+     border: 1px solid black;
+   background-color:lightgoldenrodyellow;
+   margin: 10px;
+    list-style-position: inside;
+    padding: 15px 30px;
+}
